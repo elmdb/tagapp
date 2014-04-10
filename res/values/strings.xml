@@ -2,7 +2,14 @@
 <resources>
 
     <string name="app_name">TagApp</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="button_add_tag">Add Tag</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_add_tag">Add A New Tag</string>
+    <string name="instruct_add_tag_code">Enter the code written on the tag:</string>
+    <string name="instruct_add_tag_code_hint">8 character code</string>
+    <string name="instruct_add_tag_alias">What is this tag attached to?</string>
+    <string name="instruct_add_tag_alias_hint">House Keys</string>
+    
+    <string name="hello_world">Hello World!</string>
 
 </resources>

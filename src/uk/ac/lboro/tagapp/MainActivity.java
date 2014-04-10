@@ -1,18 +1,22 @@
 package uk.ac.lboro.tagapp;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
 
+	public static final String PREFS_NAME = "uk.ac.lboro.tagapp.PREFS";
+	public static final String PREFS_KEY_TAGCOUNT = "uk.ac.lboro.tagapp.KTAGCOUNT";
+	public static final String PREFS_KEY_TAGALIAS = "uk.ac.lboro.tagapp.KTAGALIAS";
+	public static final String PREFS_KEY_TAGCODE  = "uk.ac.lboro.tagapp.TAGCODE";
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +64,14 @@ public class MainActivity extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
         }
+    }
+    
+    // do something when addTag button is pressed
+    public void addTag(View view) {
+    	// start addTag activity
+    	Intent intent = new Intent(this, AddTagActivity.class);
+    	startActivity(intent);
+    	
     }
 
 }

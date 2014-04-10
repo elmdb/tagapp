@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uk.ac.lboro.tagapp.AddTagActivity$PlaceholderFragment" >
+
+    <TextView
+    	android:id="@+id/instruct_add_tag_alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/instruct_add_tag_alias" />
+    
+    <EditText 
+        android:id="@+id/tag_alias"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instruct_add_tag_alias"
+        android:hint="@string/instruct_add_tag_alias_hint" />
+    
+    <TextView
+        android:id="@+id/instruct_add_tag_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag_alias"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/instruct_add_tag_code" />
+    
+    <EditText
+        android:id="@+id/tag_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instruct_add_tag_code"
+        android:hint="@string/instruct_add_tag_code_hint" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag_code"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:onClick="newTag"
+        android:text="@string/button_add_tag" />
+
+</RelativeLayout>
